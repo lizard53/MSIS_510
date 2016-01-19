@@ -1,0 +1,23 @@
+@relation loan.symbolic
+
+@attribute Income {high, low, medium}
+@attribute CreditRating {excellent, good, poor}
+@attribute Liability {normal,high}
+@attribute Default {false,true}
+@attribute Approve {no,yes}
+
+@data
+high,excellent,normal,true,yes
+high,excellent,normal,false,yes
+low,excellent,normal,true,no
+medium,good,normal,true,no
+medium,poor,high,true,no
+medium,poor,high,false,yes
+low,poor,high,false,no
+high,good,normal,true,yes
+high,poor,high,true,no
+medium,good,high,true,no
+high,good,high,false,no
+low,good,normal,false,no
+low,excellent,high,true,no
+medium,good,normal,false,yes
